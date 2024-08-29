@@ -71,6 +71,45 @@ header{
 
 }
 
+ul {
+    list-style: none;
+    background: #151515;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.sub-divisao li{
+    display: block;
+}
+
+ul li ul.sub-divisao {
+    width: 100%;
+    background-color: #151515;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background-color: #151515;
+}
+
+ul li:hover ul.sub-divisao {
+    display: block;
+}
+
 section{
     padding: 5% 10%;
     background-color: #303030;
@@ -323,7 +362,7 @@ header.sticky{
         right: -100%;
         width: 300px;
         height: 130hv;
-        background: #edfff1;
+        background: #151515;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -340,4 +379,48 @@ header.sticky{
     .navmenu.open{
         right: 0;
     }
+
+    .navmenu.open a{
+       color: #edfff1;
+    }
+
+    ul {
+        list-style: none;
+        background: #151515;
+    }
+    
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    ul li ul.sub-divisao li{
+        display: block;
+    }
+    
+    ul li ul.sub-divisao {
+        width: 100%;
+        background-color: #151515;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    
+    ul li a:hover{
+        background-color: #151515;
+    }
+    
+    ul li:hover ul.sub-divisao {
+        display: block;
+    }
+
 }
