@@ -17,18 +17,35 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
+    padding: 20px 20px;
     background-color: #151515;
 }
 
+.logo-container {
+    margin-right: auto; /* Move a logo para o canto esquerdo */
+  }
+
 .logo img{
     max-width: 120px;
-    height: auto;
+    width: auto;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex: 1; /* Permite que o menu e a barra de pesquisa se ajustem dentro do espaço */
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 .navmenu{
     display: flex;
+}
 
+.menu-esquerdo {
+    display: flex;
+    margin-right: 0px; /* Ajuste conforme necessário */
+    margin-left: 30px;
 }
 
 .navmenu a{
@@ -50,6 +67,7 @@ header{
     align-items: center;
 }
 
+
 .nav-icon i{
     margin-right: 20px;
     color: #edfff1;
@@ -67,9 +85,41 @@ header{
     font-size: 35px;
     color: #edfff1;
     z-index: 1001;
-    cursor: pointer;
-
+    display: block;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo da barra de pesquisa */
+    width: 500px; /* Ajuste conforme necessário */
+    border-radius: 50px;
+    background-color: #edfff1;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    background-color: #edfff1;
+}
+
+.search-botao {
+    background-color: #edfff1;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.search-botao > a {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+}
+
 
 ul {
     list-style: none;
@@ -188,7 +238,7 @@ section{
 
 header.sticky{
     background-color: #151515;
-    padding: 20px 10%;
+    padding: 20px 20px;
     box-shadow: 0px 0px 10px rgba(0, 140, 255, 0.5);
 }
 
@@ -331,6 +381,12 @@ header.sticky{
 
 /* CSS responsivo */
 
+@media (min-width: 768px) {
+    #menu-icon {
+        display: none; /* Esconde o ícone do menu em telas de desktop */
+    }
+}
+
 @media(max-width:890px){
     header{
         padding: 20px 3%;
@@ -356,6 +412,7 @@ header.sticky{
 }
 
 @media(max-width:750px){
+
     .navmenu{
         position: absolute;
         top: 100%;
@@ -423,4 +480,26 @@ header.sticky{
         display: block;
     }
 
+
+
 }
+
+@media (max-width: 768px) {
+    .search {
+        width: 40px; /* Mostra apenas o ícone de pesquisa */
+        border-radius: 50px;
+    }
+
+    .search-input {
+        display: none; /* Oculta o campo de input no mobile */
+    }
+
+    .search.expandido {
+        width: 300px; /* Expande a barra de pesquisa quando clicado */
+    }
+
+    .search.expandido .search-input {
+        display: block; /* Mostra o input quando expandido */
+    }
+}
+

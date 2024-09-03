@@ -26,28 +26,41 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 
     <header>
-        <a href="#" class="logo"> <img src="http://localhost/loja/image/bytezon2.png" alt="" ></a>
+        <div class="logo-container">
+            <a href="#" class="logo"> <img src="http://localhost/loja/image/bytezon2.png" alt="" >
+        </a></div>
 
-        <ul class="navmenu">
-            <li><a href="#">departamento</a>
-            <ul class="sub-divisao">
-                <li><a href="">Hardware</a></li>
-                <li><a href="">Áudio</a></li>
-                <li><a href="">Periféricos</a></li>
-                <li><a href="">Games</a></li>
-            </ul>
-            </li>
-            <li><a href="#">coleções</a></li>
-            <li><a href="#">promoções</a></li>
-        </ul> 
+        <div class="menu-wrapper">
+            <div class="menu-esquerdo">
+                <ul class="navmenu">
+                    <li><a href="#">departamento</a>
+                    <ul class="sub-divisao">
+                        <li><a href="">Hardware</a></li>
+                        <li><a href="">Áudio</a></li>
+                        <li><a href="">Periféricos</a></li>
+                        <li><a href="">Games</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">promoções</a></li>
+                </ul>
+            </div>
+
+            <div class="search" id="search">
+                <input type="text" placeholder="procure seu produto" class="search-input">
+                <button class="search-botao">
+                <a href="#"><i class='bx bx-search'></i></a>
+                </button>
+            </div>
+
 
         <div class="nav-icon">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-user'></i></a>
+
+            <a href="cadastro.php"><i class='bx bx-user'></i></a>
             <a href="#"><i class='bx bx-cart'></i></a>
 
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
+    </div>
 
     </header>
 
