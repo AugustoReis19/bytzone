@@ -105,6 +105,29 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                 </div>
             </div>
 
+            <div class="products">
+            <div class="rown">
+                <img src="http://localhost/loja/image/teclado1.jpg" alt="">
+                <div class="product-text">
+                    <h5>Promoção</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="price">
+                    <h4>Teste do GIT Tt</h4>
+                    <p>R$110,50</p>
+                </div>
+            </div>
+
             <div class="rown">
                 <img src="http://localhost/loja/image/teclado2.jpg" alt="">
                 <div class="product-text">
